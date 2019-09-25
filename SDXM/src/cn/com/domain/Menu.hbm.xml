@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-9-19 16:11:32 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.com.domain.Menu" table="menu" catalog="SDXM">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="increment"></generator>
+        </id>
+        <property name="groupname" type="string">
+            <column name="groupname" length="30" />
+        </property>
+        <property name="isDelete" type="string">
+            <column name="is_delete" length="1" />
+        </property>
+        <property name="groupcode" type="string">
+            <column name="groupcode" length="20" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" length="50"/>
+        </property>
+    </class>
+</hibernate-mapping>

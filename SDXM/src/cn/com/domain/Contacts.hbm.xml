@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-7 17:13:49 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.com.domain.Contacts" table="contacts" catalog="SDXM">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="linkman" type="string">
+            <column name="linkman" length="45">
+            </column>
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="20">
+            </column>
+        </property>
+        <property name="mail" type="string">
+            <column name="mail" length="20">
+            </column>
+        </property>
+        <property name="message" type="string">
+            <column name="message" length="500">
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

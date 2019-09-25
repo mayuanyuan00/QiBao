@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- T 2018.01.16 手动添加 -->
+<hibernate-mapping>
+    <class name="cn.com.domain.BookContacts" table="bookcontacts" catalog="SDXM">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="increment"></generator>
+        </id>
+        <property name="bookid" type="int">
+            <column name="bookid" />
+        </property>
+        <property name="booktypeid" type="int">
+            <column name="booktypeid"  />
+        </property>
+    </class>
+</hibernate-mapping>

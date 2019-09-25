@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 张炜婕 2017.09.27 手动添加 -->
+<hibernate-mapping>
+	<class name="cn.com.domain.Order" table="torder" catalog="SDXM">
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="increment"></generator>
+		</id>
+		<property name="userid" type="int">
+			<column name="userid" />
+		</property>
+		<property name="count" type="double">
+			<column name="count" />
+		</property>
+		<property name="status" type="string">
+			<column name="status" />
+		</property>
+		<property name="grade" type="int">
+			<column name="grade" />
+		</property>
+		<property name="comment" type="string">
+			<column name="comment" />
+		</property>
+		<property name="create_date" type="date">
+			<column name="create_date" />
+		</property>
+		<property name="orderno" type="string">
+			<column name="orderno" />
+		</property>
+		<property name="address" type="string">
+			<column name="address" />
+		</property>
+		<property name="owner" type="string">
+			<column name="owner" />
+		</property>
+		<property name="expno" type="string">
+			<column name="expno" />
+		</property>
+		<property name="express" type="string">
+			<column name="express" />
+		</property>
+	</class>
+</hibernate-mapping>

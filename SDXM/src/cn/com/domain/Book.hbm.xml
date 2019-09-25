@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-9-19 16:11:32 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.com.domain.Book" table="book" catalog="SDXM">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="increment"></generator>
+        </id>
+        <property name="bookName" type="string">
+            <column name="book_name" length="50">
+                <comment>&#205;&#188;&#202;&#233;&#195;&#251;&#179;&#198;</comment>
+            </column>
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="20">
+                <comment>&#205;&#188;&#202;&#233;&#192;&#224;&#208;&#205;</comment>
+            </column>
+        </property>
+        <property name="price" type="big_decimal">
+            <column name="price" precision="10">
+                <comment>&#205;&#188;&#202;&#233;&#188;&#219;&#184;&#241;</comment>
+            </column>
+        </property>
+        <property name="imageurl" type="string">
+            <column name="imageurl" length="100">
+                <comment>&#205;&#188;&#202;&#233;&#205;&#188;&#198;&#172;</comment>
+            </column>
+        </property>
+        <property name="ebookurl" type="string">
+            <column name="ebookurl" length="100"/>
+        </property>
+        <property name="author" type="string">
+            <column name="author" length="50">
+                <comment>&#205;&#188;&#202;&#233;&#215;&#247;&#213;&#223;</comment>
+            </column>
+        </property>
+        <property name="isbn" type="string">
+            <column name="ISBN" length="50">
+                <comment>&#179;&#246;&#176;&#230;&#201;&#231;</comment>
+            </column>
+        </property>
+        <property name="press" type="string">
+            <column name="Press" length="100"/>
+        </property>
+        <property name="publicationDate" type="string">
+            <column name="publication_date" length="10"/>
+        </property>
+        <property name="revision" type="string">
+            <column name="revision" length="20"/>
+        </property>
+        <property name="pages" type="string">
+            <column name="pages" length="20"/>
+        </property>
+        <property name="wordcount" type="string">
+            <column name="wordcount" length="20"/>
+        </property>
+        <property name="impression" type="string">
+            <column name="Impression" length="20"/>
+        </property>
+        <property name="authorImg" type="string">
+            <column name="author_img" length="100"/>
+        </property>
+        <property name="folio" type="string">
+            <column name="folio" length="20"/>
+        </property>
+        <property name="sheet" type="string">
+            <column name="sheet" length="20"/>
+        </property>
+        <property name="contentvalidity" type="string">
+            <column name="contentvalidity" length="65535"/>
+        </property>
+        <property name="authorIntro" type="string">
+            <column name="author_intro" length="65535"/>
+        </property>
+        <property name="sampleChapters" type="string">
+            <column name="sample_chapters" length="65535"/>
+        </property>
+        <property name="catalog" type="string">
+            <column name="catalog" length="1000"/>
+        </property>
+        <property name="editorial" type="string">
+            <column name="editorial" length="1000"/>
+        </property>
+        <property name="isDelete" type="string">
+            <column name="is_delete" length="1">
+                <comment>1&#163;&#186;&#201;&#190;&#179;&#253;&#163;&#187;0&#163;&#186;&#206;&#180;&#201;&#190;&#179;&#253;</comment>
+            </column>
+        </property>
+        <property name="isNew" type="boolean">
+            <column name="is_new" length="1"/>
+        </property>
+        <property name="auditing" type="string">
+            <column name="auditing" length="1">
+                <comment>1&#163;&#186;&#201;&#190;&#179;&#253;&#163;&#187;0&#163;&#186;&#206;&#180;&#201;&#190;&#179;&#253;</comment>
+            </column>
+        </property>
+        <property name="review" type="string">
+            <column name="review" length="1000"/>
+        </property>
+        <property name="extention" type="string">
+            <column name="extention" length="100"/>
+        </property>
+    </class>
+</hibernate-mapping>

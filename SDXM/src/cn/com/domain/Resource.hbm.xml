@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-12-25 13:34:10 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.com.domain.Resource" table="resource" catalog="SDXM">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="resourceName" type="string">
+            <column name="resource_name" length="100" not-null="true" />
+        </property>
+        <property name="resourceUrl" type="string">
+            <column name="resource_url" length="200" />
+        </property>
+        <property name="resourceType" type="string">
+            <column name="resource_type" length="45" />
+        </property>
+        <property name="release" type="string">
+            <column name="rel" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

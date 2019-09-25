@@ -1,0 +1,50 @@
+/* 清除内外边距 */
+body,  p, /* structural elements 结构元素 */
+ul, ol, li, /* list elements 列表元素 */
+button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+    /*font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;*/ /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+   font: 12px/1 "微软雅黑";
+}
+button, input, select, textarea {
+	outline: none;
+	border: none;
+}
+body {background: #fff;}
+
+em, i { font-style: normal; } /* 将斜体扶正 */
+
+/* 重置列表元素 */
+ul, ol ,li { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; padding: 0; margin: 0; }
+a:hover { text-decoration: none; }
+
+q:before, q:after { content: ''; }
+
+/* 重置表单元素 */ 
+img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+body,html {
+	height: 100%;
+}
+/******清除浮动******/
+.clearfix {  *zoom: 1;} 
+.clearfix:before, .clearfix:after { display: table; line-height: 0;  content: ""; } 
+.clearfix:after { clear: both;} 
+
+.fl { float: left;}
+.fr {float: right;}
+

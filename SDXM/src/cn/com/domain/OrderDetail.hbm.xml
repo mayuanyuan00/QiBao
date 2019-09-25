@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 张炜婕 2017.09.27 手动添加 -->
+<hibernate-mapping>
+	<class name="cn.com.domain.OrderDetail" table="order_detail" catalog="SDXM">
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="increment"></generator>
+		</id>
+		<property name="orderid" type="int">
+			<column name="orderid" />
+		</property>
+		<property name="itemid" type="int">
+			<column name="itemid" />
+		</property>
+		<property name="amount" type="int">
+			<column name="amount" />
+		</property>
+		<property name="expno" type="string">
+			<column name="expno" />
+		</property>
+		<property name="expid" type="string">
+			<column name="expid" />
+		</property>
+		<property name="unit" type="double">
+			<column name="unit" />
+		</property>
+		<property name="count" type="double">
+			<column name="count" />
+		</property>
+	</class>
+</hibernate-mapping>

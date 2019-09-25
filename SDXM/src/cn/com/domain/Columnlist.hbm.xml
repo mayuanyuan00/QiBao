@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-9-19 16:11:32 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.com.domain.Columnlist" table="columnlist" catalog="SDXM">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="increment"></generator>
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50" />
+        </property>
+        <property name="level" type="java.lang.Integer">
+            <column name="level"/>
+        </property>
+        <property name="parent" type="java.lang.Integer">
+            <column name="parent"/>
+        </property>
+        <property name="isDelete" type="java.lang.Boolean">
+            <column name="is_delete"/>
+        </property>
+        <property name="hasContent" type="java.lang.Boolean">
+            <column name="has_content"/>
+        </property>
+    </class>
+</hibernate-mapping>

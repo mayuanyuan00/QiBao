@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-9-19 16:11:32 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.com.domain.User" table="user" catalog="SDXM">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="increment"></generator>
+        </id>
+        <property name="userName" type="string">
+            <column name="user_name" length="20" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="20" />
+        </property>
+        <property name="createDate" type="date">
+            <column name="create_date" length="10" />
+        </property>
+        <property name="sex" type="string">
+            <column name="sex" length="2" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="10" />
+        </property>
+        <property name="imageUrl" type="string">
+            <column name="imageUrl" length="100" />
+        </property>
+        <property name="isDelete" type="string">
+            <column name="is_delete" length="1" />
+        </property>
+        <property name="groupCode" type="string">
+            <column name="group_code" length="1" />
+        </property>
+        <!-- 张炜婕 2017-9-27 添加 start -->
+        <property name="phone" type="string">
+            <column name="phone" length="15" />
+        </property>
+         <property name="email" type="string">
+            <column name="email" length="255" />
+        </property>
+         <!-- 张炜婕 2017-9-27 添加 end -->
+    </class>
+</hibernate-mapping>

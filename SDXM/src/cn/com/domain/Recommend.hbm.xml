@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-7 17:13:49 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.com.domain.Recommend" table="recommend" catalog="SDXM">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="hotBook" type="java.lang.Integer">
+            <column name="hot_book" />
+        </property>
+        <property name="comment" type="string">
+            <column name="comment" length="500" />
+        </property>
+        <property name="authorName" type="string">
+            <column name="author_name" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

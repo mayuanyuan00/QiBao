@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-9-19 16:11:32 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.com.domain.Orderlist" table="orderlist" catalog="SDXM">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="increment"></generator>
+        </id>
+        <property name="orderNo" type="string">
+            <column name="order_no" length="30" />
+        </property>
+        <property name="productName" type="string">
+            <column name="product_name" length="100" />
+        </property>
+        <property name="buy" type="date">
+            <column name="buy" length="10" />
+        </property>
+        <property name="buyMan" type="binary">
+            <column name="buy_man" />
+        </property>
+        <property name="productPrice" type="java.lang.Byte">
+            <column name="productPrice" precision="2" scale="0" />
+        </property>
+        <property name="isDelete" type="binary">
+            <column name="is_delete" />
+        </property>
+    </class>
+</hibernate-mapping>

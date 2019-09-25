@@ -1,0 +1,91 @@
+/* 清除内外边距 */
+body,  p, /* structural elements 结构元素 */
+ul, ol, li, /* list elements 列表元素 */
+button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+form{
+	margin: 0;
+}
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea {
+   font: 12px/1 "微软雅黑";
+   color: #333;
+}
+button, input, select, textarea {
+	outline: none;
+	border: none;
+}
+body {background: #fff;}
+
+em, i { font-style: normal; } /* 将斜体扶正 */
+
+/* 重置列表元素 */
+ul, ol ,li { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; padding: 0; margin: 0; }
+a:hover { text-decoration: none; }
+
+q:before, q:after { content: ''; }
+
+/* 重置表单元素 */ 
+img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+body,html {
+	height: 100%;
+}
+/******清除浮动******/
+.clearfix {  *zoom: 1;}
+.clearfix:before, .clearfix:after { display: table; line-height: 0;  content: ""; } 
+.clearfix:after { clear: both;} 
+
+.fl { float: left;}
+.fr {float: right;}
+
+.bg-brown {
+	background: #895524;
+}
+.bg-gray {
+	background: #f2f2f2;
+}
+.bg-gray-02 {
+	background: #f5f1e0;
+}
+.bg-pic {
+	width: 100%;
+	background: url(../img/about/about_bg.png) no-repeat center center;
+}
+.pdr-70 {
+	padding-right: 70px !important;
+}
+.pdl-70 {
+	padding-left: 70px !important;
+}
+.mb70 {
+	margin-bottom: 70px !important;
+}
+.pb30 {
+	padding-bottom: 30px !important;
+}
+/****placeholder颜色***/
+input::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #c8c8c8; 
+} 
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #c8c8c8; 
+} 
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #c8c8c8; 
+} 
+input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #c8c8c8; 
+} 

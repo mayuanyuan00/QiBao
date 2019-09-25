@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-27 14:53:55 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.com.domain.ShippingAddress" table="shipping_address" catalog="SDXM">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="userid" type="int">
+            <column name="userid" not-null="true">
+                <comment>&#211;&#195;&#187;&#167;ID</comment>
+            </column>
+        </property>
+        <property name="province" type="string">
+            <column name="province" length="45">
+                <comment>&#202;&#161;</comment>
+            </column>
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="45">
+                <comment>&#202;&#208;</comment>
+            </column>
+        </property>
+        <property name="area" type="string">
+            <column name="area" length="45">
+                <comment>&#199;&#248;</comment>
+            </column>
+        </property>
+        <property name="addressDetail" type="string">
+            <column name="address_detail" length="100">
+                <comment>&#207;&#234;&#207;&#184;&#181;&#216;&#214;&#183;</comment>
+            </column>
+        </property>
+        <property name="code" type="string">
+            <column name="code" length="45">
+                <comment>&#211;&#202;&#177;&#224;</comment>
+            </column>
+        </property>
+        <property name="consignee" type="string">
+            <column name="consignee" length="45" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="20">
+                <comment>&#202;&#214;&#187;&#250;</comment>
+            </column>
+        </property>
+        <property name="tel" type="string">
+            <column name="tel" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

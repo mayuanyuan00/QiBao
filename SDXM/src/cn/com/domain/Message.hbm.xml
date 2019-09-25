@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-9-19 16:11:32 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="cn.com.domain.Message" table="message" catalog="SDXM">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="increment"></generator>
+        </id>
+        <property name="title" type="string">
+            <column name="title" length="20" />
+        </property>
+        <property name="userName" type="string">
+            <column name="user_name" length="20" />
+        </property>
+        <property name="message" type="string">
+            <column name="message" length="100" />
+        </property>
+        <property name="createTime" type="date">
+            <column name="create_time" length="10" />
+        </property>
+        <property name="toPerson" type="string">
+            <column name="toPerson" length="10" />
+        </property>
+        <property name="userId" type="java.lang.Integer">
+            <column name="user_id" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="20" />
+        </property>
+        <property name="isDelete" type="string">
+            <column name="is_delete" length="1" />
+        </property>
+        <property name="replyId" type="int">
+            <column name="reply_id" length="11" />
+        </property>
+        <property name="show" type="boolean">
+            <column name="show" length="1"/>
+        </property>
+        <property name="tel" type="string">
+            <column name="tel" length="15"/>
+        </property>
+    </class>
+</hibernate-mapping>

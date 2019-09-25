@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+    <property name="connection.url">jdbc:mysql://202.120.117.23:3306/SDXM</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+        <mapping resource="cn/com/domain/Message.hbm.xml" />
+        <mapping resource="cn/com/domain/Usergroup.hbm.xml" />
+        <mapping resource="cn/com/domain/Columnlist.hbm.xml" />
+        <mapping resource="cn/com/domain/Orderlist.hbm.xml" />
+        <mapping resource="cn/com/domain/Book.hbm.xml" />
+        <mapping resource="cn/com/domain/Booktype.hbm.xml" />
+        <mapping resource="cn/com/domain/User.hbm.xml" />
+        <mapping resource="cn/com/domain/Log.hbm.xml" />
+        <mapping resource="cn/com/domain/News.hbm.xml"/>
+        <mapping resource="cn/com/domain/Links.hbm.xml" />
+        <mapping resource="cn/com/domain/Recommend.hbm.xml" />
+        <mapping resource="cn/com/domain/Contacts.hbm.xml" />
+        <mapping resource="cn/com/domain/Keywords.hbm.xml" />
+        <mapping resource="cn/com/domain/NewsKeywords.hbm.xml" />
+        <mapping resource="cn/com/domain/Cart.hbm.xml" />
+        <mapping resource="cn/com/domain/Collection.hbm.xml" />
+        <mapping resource="cn/com/domain/Order.hbm.xml" />
+        <mapping resource="cn/com/domain/OrderDetail.hbm.xml" />
+        <mapping resource="cn/com/domain/ShippingAddress.hbm.xml" />
+        <mapping resource="cn/com/domain/Resource.hbm.xml" />
+        <mapping resource="cn/com/domain/BookContacts.hbm.xml"/>
+        <mapping resource="cn/com/domain/Menu.hbm.xml"/>
+        <mapping resource="cn/com/domain/ReleaseBook.hbm.xml"/>
+</session-factory>
+</hibernate-configuration>
